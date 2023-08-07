@@ -1,0 +1,165 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    color: #040404;
+   
+  }
+  
+  .logo {
+    font-size: 55px;
+    color: red;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 1% 0 8%
+  }
+  
+  .searchbar {
+    padding: 10px;
+    margin: 1.3% 2% 0 2%
+    
+  }
+  .nav-list{
+    margin: 1.3% 2% 0 2%
+  }
+  
+  /* Mobile menu icon styles */
+  .mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    color: #040404;
+    margin-top: 10px;
+    float: right;
+    margin-top: -50px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #111111;
+    margin: 3px 0;
+  }
+  
+ 
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2% 0 2%
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+   
+  }
+  
+  .navigation ul li {
+    /* margin: 10px 0; */
+    cursor: pointer;
+    margin: 0 1% 0 0.5%;
+    width:120px
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  .dropdown:hover .sub-menu {
+    display: block;
+  }
+  /* Mobile menu styles */
+  @media (max-width: 768px) {
+    .mobile-menu-icon {
+      display: flex;
+    }
+  
+    .navigation {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color:white;
+      display: none;
+      
+      z-index: 1;
+    }
+  
+    .navigation.open {
+      display: flex;
+    }
+  
+    .navigation ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .navigation ul li {
+      margin: 10px 0;
+    }
+    .logo{
+        padding: 10px;
+        margin: 0 2% 0 3%;
+
+        font-size: 35px;
+        color: #fdfdfd;
+        
+        align-items: center;
+        display: block;
+        
+    }
+    .navbar {
+        display: block;
+        background-color: #040404;
+
+    }
+    .bar{
+        background-color: #fdfdfd;
+        float:right;
+    }
+    .search-bar{
+        width: 300px;
+        margin: none;
+    }
+
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+  }
+  
+  .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #696b6c;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  

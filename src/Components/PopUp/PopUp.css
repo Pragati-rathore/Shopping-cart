@@ -1,0 +1,77 @@
+.shopping-cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #dc2504;
+    color: #fff;
+    font-size: 24px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start hidden on the right */
+    z-index: 1000; /* Higher z-index to ensure the popup is on top */
+    height: 100%;
+    width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+  
+  
+  
+  .popup.active {
+    right: 0;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    width: 500px;
+  }
+  
+  .cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .item-image {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  

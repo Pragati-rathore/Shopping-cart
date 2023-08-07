@@ -1,0 +1,28 @@
+.header {
+    background-color: #404243;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 4%;
+  }
+  
+  .header-text {
+    font-size: 24px;
+  }
+  .login{
+   
+    background-color: black;
+    color:white;
+    height: 50%;
+    font-size: 12px;
+    word-spacing: 10px;
+    padding: 0.5% 0 0.5% 80%;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-text {
+      font-size: 20px;
+    }
+  }
+  

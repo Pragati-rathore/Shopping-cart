@@ -1,0 +1,47 @@
+/* Default styles for larger screens */
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .carousel-image {
+    
+    object-fit: contain;
+    padding: 20%;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .carousel-slide {
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .carousel-image {
+      max-height: 250px;
+    }
+  }
+  
+
+  .carousel.carousel-slider .control-arrow {
+    font-size: 12%;
+    margin-top: 15%;
+    color: #020202;
+    background-color: rgba(149, 140, 140, 0.8);
+    border: none;
+
+    width: 4%;
+    height: 8%;
+    line-height: 4%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .carousel.carousel-slider .control-arrow:hover {
+    background-color: #eaf135;
+    color: #eaf135;
+  }
