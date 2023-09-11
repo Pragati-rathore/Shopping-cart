@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa'; // Import your CSS file for styling
 
 const Navbar = () => {
@@ -34,9 +35,10 @@ const Navbar = () => {
               
             </ul> */}
           </li>
-          <li>New</li>
+          <li>Women</li>
+         <Link to="/men"><li>Men</li></Link> 
           <li>Video Gallery</li>
-          <li>In The News</li>
+          
           <li>Education</li>
           <li>Coupons & Promos</li>
           

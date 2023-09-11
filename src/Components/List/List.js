@@ -1,5 +1,5 @@
 import React from 'react';
-import './List.css'; // Import your CSS file for styling
+import './List.css'; 
 
 const List = () => {
   return (
